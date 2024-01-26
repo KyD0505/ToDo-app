@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            To Do List - Kyle
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+            
+            <div class="todo-app">
+                <h2>
+                    <img src="imgs/to-do-list.png" alt="to-do-list-icon"> To Do List
+                </h2>
+                <div class="inputBar">
+                    <input type="text" id="input-box" placeholder="Add your Tasks">
+                    <!-- onclick triggers an event, the "()" is a function that dictates it is a javaScript function and therefore can be used in javascript-->
+                    <button id="input-btn" onclick="addTask()">
+                        Add
+                    </button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li> -->
+                </ul>
+            </div>
+            <div id="divBtn">
+                <button id="logoutBtn" onclick="logout()">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

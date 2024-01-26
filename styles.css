@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#68BBE3, #0E86D4, #055C9D, #003060);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img {
+    width: 40px;
+    margin-right: 10px;
+}
+.inputBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cfefff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+#input-box {
+    flex: 1;
+
+    /* removed format for input box */
+    border: none;
+    outline: none;
+    background: transparent;
+
+    padding: 10px;
+    font-weight: 14px;
+}
+#input-btn {
+    /* removed format for button */
+    border: none;
+    outline: none;
+    /* changed format when hovering to button */
+    cursor: pointer;
+
+    padding: 15px 50px;
+    background: #0E86D4;
+    color: white;
+    font-size: 16px;
+    border-radius: 40px;
+}
+#list-container li{
+    /* removed default format for list */
+    list-style: none;
+    user-select: none;
+    /* changed format when hovering to list */
+    cursor: pointer;
+
+    position: relative;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+}
+#list-container li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border: 50%;
+    background-image: url(imgs/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+#list-container li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+#list-container li.checked::before {
+    background-image: url(imgs/checked.png);
+}
+/* this css code below is too advanced for me when I started to develop this todo app */
+#list-container li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    /* did not changed when i removed height but im keeping it anyways */
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+#list-container li span:hover {
+    background: #68BBE3;
+}
+
+
+#divBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logoutBtn {
+    /* removed format for button */
+    border: none;
+    outline: none;
+    /* changed format when hovering to button */
+    cursor: pointer;
+    
+    padding: 15px 50px;
+    background: #e43b3b;
+    color: white;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginLabel {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.loginButton {
+    width: 100%;
+    margin: 5px auto;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}

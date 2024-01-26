@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            To Do List - Kyle
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="signup-container">
+            <h2>Create Account</h2>
+            <label for="username" class="loginLabel">Username:</label>
+            <input type="text" id="createUsername" name="username" required >
+        
+            <label for="password" class="loginLabel">Password:</label>
+            <input type="password" id="createPassword" name="password" required>
+
+            <button onclick="createAccount()" class="loginButton">Sign Up</button>
+        </div>
+
+        <style>
+            h2{
+                text-align: center;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background: linear-gradient(#68BBE3, #0E86D4, #055C9D, #003060);
+            }
+        </style>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
